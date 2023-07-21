@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./details.css">
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>Product Details</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar p-3 fixed-top">
+        <a  class="navbar-brand logo" href="../products/products.html">
+            <span class="text-danger logo">sales</span><span class="text-primary logo">Analysis</span>
+        </a>
+        <button id="logout" class="navbar-text justify-content-end" onclick="logout()"></button>
+    </nav>
+
+
+    <div class="container">
+        <div class="contents">
+            <nav class="navbar justify-content-center rounded-top rounded-4 w-25" style="background-color: #eeeeee85;">
+                <span id="pname" class="navbar-text text-black"></span>
+            </nav>
+        </div>
+        <div class="card bg-light ">
+            <div class="card-body">
+                <div class="card-header">Break Even Analysis</div>
+                <div id="chart_div" class="w-100"></div>
+                <div id="beaDescription" class="card-footer"></div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="card-header">Maximum Sales & Minimum Sales</div>
+                    <div id="chart_div2" class="c-h w-100"></div>
+                    <div id="MinMaxDescription" class="card-footer"></div>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="card-header">Current Month Trend</div>
+                    <div id="curMonthTrend" class="c-h w-100"></div>
+                    <div id="cmtDescription" class="card-footer"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="crdgrptitle border rounded bg-light">
+            <div class="title"><h2>Weekly Analysis</h2></div>
+            <div class="card-group">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Week 1</div>
+                        <div id="w1bar" class="c-h w-100"></div>
+                        <div id="w1barIns" class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Week 2</div>
+                        <div id="w2bar" class="c-h w-100"></div>
+                        <div id="w2barIns" class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Week 3</div>
+                        <div id="w3bar" class="c-h w-100"></div>
+                        <div id="w3barIns" class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Week 4</div>
+                        <div id="w4bar" class="c-h w-100"></div>
+                        <div id="w4barIns" class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="crdgrptitle border rounded bg-light">
+            <div class="title"><h2>Quaterly Analysis</h2></div>
+            <div class="card-group">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Q1</div>
+                        <div id="q1bar" class="c-h w-100"></div>
+                        <div id="q1barIns" class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Q2</div>
+                        <div id="q2bar" class="c-h w-100"></div>
+                        <div id="q2barIns" class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <div class="card-header">Q3</div>
+                        <div id="q3bar" class="c-h w-100"></div>
+                        <div id="q3barIns" class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+
+
+    <!-- firebase libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="../firebaseinit.js"></script>
+    <script src="../navbar/logout.js"></script>
+    <script src="./details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

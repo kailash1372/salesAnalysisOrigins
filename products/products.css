@@ -1,0 +1,71 @@
+#productcontainer{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.pcard{
+    display:flexbox;    
+    color:black;
+    border:2px solid #11468F;
+    /* height:7rem; */
+    width: 100%;
+    margin-top:5px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:15px;
+    padding-bottom: 15px;
+
+}
+#chart_div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addbtnclass{
+    background-color: #041562;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     width: 100%;
+}
+
+#addbtn{
+    border:0px;
+    border-radius: 50%;
+    height:55px;
+    width: 55px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.btnclass{
+    display: grid;
+    float:right;
+    justify-content: end;
+
+}
+
+.h5card{
+    width: min-content;
+    float:left;
+}
+
+.btn-success{
+    margin-bottom: 5px;
+}
+
+.contents{
+    margin-bottom: 5px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.text-small{
+    font-size: 0.8rem;
+}

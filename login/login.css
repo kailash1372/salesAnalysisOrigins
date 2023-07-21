@@ -1,0 +1,68 @@
+.outermost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerborder{
+    margin-top:20px;
+    padding: 10%;
+    padding-top:3%;
+    /* width:60%; */
+    min-width: 60%;
+}
+
+h1{
+    margin-top: 5px;
+    padding-bottom: 0px;
+}
+
+#red{
+    color: red;
+}
+
+#blue{
+    color:blue;
+}
+
+#headertext{
+    padding-bottom: 7px;
+    color: black;
+}
+
+#companyname{
+    margin-top: 30px;
+    padding: 10px;
+    display:none;
+}
+
+#email{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#password{
+    margin-top:15px;
+    padding:10px
+}
+
+#signinbtn{
+    margin-top: 7%;
+    padding:10px;
+}
+
+#or{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#signupbtn{
+    margin-top: 10px;
+    padding:10px;
+}
+
+#gobackbtn{
+    display:none;
+    margin-top: 10px;
+    padding:10px;
+}

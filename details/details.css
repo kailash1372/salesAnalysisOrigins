@@ -1,0 +1,30 @@
+/* .container{
+    margin-top: 100px;
+} */
+.card{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.crdgrptitle{
+    margin-top:10px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.text-small{
+    font-size: 0.8rem;
+}
+
+#chart_div{
+    min-height: 25rem;
+}
+
+.c-h{
+    min-height: 20rem;
+}

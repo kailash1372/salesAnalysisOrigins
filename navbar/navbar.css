@@ -1,0 +1,21 @@
+.navbar{
+    background-color: #EEEEEE;
+}
+.contents{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+}
+
+#logout{
+    border:0px;
+}
+
+#email{
+    color: black;
+}
+.logo{
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 800;
+}

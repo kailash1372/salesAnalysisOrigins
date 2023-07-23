@@ -44,6 +44,7 @@ const monthMap = {1:"January",2:"February",3:"March",4:"April",5:"May",6:"June",
 var jsmonthvalue = monthMap[jsMonth[date[1]]];
 
 var productunitspermonth = [['productName', 'monthlySales']];
+var productrevenuepermonth = [['productName', 'monthlySales']];
 var index = 0;
 var insightsArr = [];
 
@@ -74,20 +75,22 @@ function firstChartData(productsArr,month){
         var t = doc.data().total;
         insightsArr.push([pname,psellp,t]);
         var productData = [pname, t];
+        let t123 = [pname,t*psellp];
+        productrevenuepermonth.push(t123);
         productunitspermonth.push(productData);
         index = index + 1;
         if (i === productsArr.length) {
-            drawProductSales();
+            drawProductSales(productunitspermonth);
         }
       }
 
     });
   }
 }
-function drawProductSales() {
+function drawProductSales(arg) {
     google.charts.load('current', { packages: ['corechart', 'bar'] });
     google.charts.setOnLoadCallback(() => {
-        var data = google.visualization.arrayToDataTable(productunitspermonth);
+        var data = google.visualization.arrayToDataTable(arg);
         var chart = new google.visualization.ColumnChart(document.getElementById('monthlyunitssold'));
         chart.draw(data,options);
         addFirstInsights(insightsArr);
